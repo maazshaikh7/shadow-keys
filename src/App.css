@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+}
+.ghostTextContainer {
+  margin: 10rem auto;
+  padding: 1rem 2rem;
+  display: grid;
+  row-gap: 1rem;
+  border-radius: 1rem;
+  place-items: center;
+  min-width: 50%;
+  width: fit-content;
+  min-height: 30vh;
+}
+.light {
+  background-color: white;
+  color: rgb(29, 0, 35);
+}
+.dark {
+  color: white;
+  background-color: rgb(29, 0, 35);
+}
+.ghostText {
+  border-radius: 4px;
+  padding: 1rem;
+}
+.light-text {
+  background-color: rgba(218, 196, 32, 0.48);
+}
+.dark-text {
+  background-color: rgba(144, 197, 198, 0.872);
+  color: rgb(29, 0, 35);
+}
