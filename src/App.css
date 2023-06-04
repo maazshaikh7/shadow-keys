@@ -3,7 +3,7 @@
 }
 .ghostTextContainer {
   margin: 10rem auto;
-  padding: 1rem 2rem;
+  padding: 3rem 2rem;
   display: grid;
   row-gap: 1rem;
   border-radius: 1rem;
@@ -11,6 +11,7 @@
   min-width: 50%;
   width: fit-content;
   min-height: 30vh;
+  border: 2px solid gray;
 }
 .light {
   background-color: white;
@@ -18,7 +19,7 @@
 }
 .dark {
   color: white;
-  background-color: rgb(29, 0, 35);
+  background-color: black;
 }
 .ghostText {
   border-radius: 4px;
@@ -29,5 +30,18 @@
 }
 .dark-text {
   background-color: rgba(144, 197, 198, 0.872);
-  color: rgb(29, 0, 35);
+  color: black;
+}
+
+button {
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+input {
+  width: 75%;
+  height: 2rem;
+  border: 2px solid gray;
+  padding: 5px;
+  border-radius: 5px;
 }
