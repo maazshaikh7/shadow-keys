@@ -1,9 +1,7 @@
 import PropTypes from "prop-types";
 import "../index.css";
 type navProps = {
-  mode: string;
   title: string;
-  toggleMode: () => void;
 };
 
 export default function Navbar(props: navProps) {

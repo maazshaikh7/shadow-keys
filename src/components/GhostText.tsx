@@ -1,15 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 
-type GhostTextProps = {
-  mode: string;
-};
-
 type TestResult = {
   speed: number;
   accuracy: number;
 };
 
-const GhostText: React.FC<GhostTextProps> = ({ mode }) => {
+const GhostText = () => {
   const [paragraphs] = useState<string[]>([
     "The wolves stared at the Grizzly and her cubs. Hungry and desperate, they hesitated. The risk of attacking the mother was high. The pack's survival was at stake.",
     "He picked up plastic trash daily. The beach was never clean. More plastic appeared every day. It seemed endless, but he persisted.",
@@ -130,9 +126,9 @@ const GhostText: React.FC<GhostTextProps> = ({ mode }) => {
   ]);
 
   return (
-    <div className={`ghostTextContainer ${mode}`}>
+    <div className={`ghostTextContainer `}>
       <h2>START TYPING!</h2>
-      <div className={`ghostText ${mode}-text`}>
+      <div className={`ghostText`}>
         {currentSentence.split(" ").map((word, index) => (
           <span key={index} className={index === 0 ? "current-word" : ""}>
             {index === 0 ? (
@@ -167,7 +163,7 @@ const GhostText: React.FC<GhostTextProps> = ({ mode }) => {
       </button>
       <input
         placeholder="Go..."
-        className={`input ${mode}`}
+        className={`input`}
         ref={inputRef}
         value={userInput}
         onChange={handleInputChange}
